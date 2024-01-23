@@ -14,7 +14,7 @@ jobs:
           password: ${{secrets.MAIL_PASSWORD}}
           subject: HELLO WORLD
           body: Email test from ${{github.repository}}. which is owned by ${{github.event.pusher.name}}.
-          to: jyri.vaitmaa@tthk.ee, nmarenkova03@gmail.com
+          to: jyri.vaitmaa@tthk.ee
           from: Github Actions
         
 
