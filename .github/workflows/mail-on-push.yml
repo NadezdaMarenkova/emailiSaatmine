@@ -10,13 +10,14 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: ${{HotDog.MAIL_USERNAME}}
-          password: ${{HotDog2020.MAIL_PASSWORD}}
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
           subject: HELLO WORLD
-          body: Email test from ${{github.repository}}. which iss owned by ${{github.event.pusher.name}}.
-          to: nmarenkova03@gmail.com
+          body: Email test from ${{github.repository}}. which is owned by ${{github.event.pusher.name}}.
+          to: jyri.vaitmaa@tthk.ee, nmarenkova03@gmail.com
           from: Github Actions
-          
+        
+
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
