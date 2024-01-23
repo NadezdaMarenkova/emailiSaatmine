@@ -1,7 +1,3 @@
-//MAIL_PASSWORD HotDog2020
-//MAIL_USERNAME HotDog
-//jyri.vaitmaa@tthk.ee
-
 name: GitHub Actions Demo
 on:
   push:
